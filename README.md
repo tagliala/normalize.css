@@ -1,10 +1,13 @@
+![IL WEB È PER IL MAIUSCOLO](http://i.imgur.com/kKj8V9t.jpg)
+
 # normalize.css for Italian Websites
 
 <a href="https://github.com/necolas/normalize.css"><img
   src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo"
   width="80" height="80" align="right"></a>
 
-> A modern alternative to CSS resets
+> IL WEB È PER IL **MAIUSCOLO!**
+
 
 [![npm][npm-image]][npm-url] [![license][license-image]][license-url]
 [![changelog][changelog-image]][changelog-url]
