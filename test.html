@@ -86,10 +86,6 @@
   <h1 class="Test-title"><a href="https://github.com/necolas/normalize.css">Normalize.css</a>: UI tests</h1>
 
   <h2 class="Test-describe"><code>html</code></h2>
-  <h3 class="Test-it">should have sans-serif font family (opinionated)</h3>
-  <div class="Test-run">
-    abcdefghijklmnopqrstuvwxyz
-  </div>
   <h3 class="Test-it">should have a line height of 1.15</h3>
   <div class="Test-run">
     abcdefghijklmnopqrstuvwxyz
@@ -259,8 +255,8 @@
   </div>
 
   <h2 class="Test-describe"><code>button</code>, <code>input</code>, <code>optgroup</code>, <code>select</code>, <code>textarea</code></h2>
-  <h3 class="Test-it">should inherit <code>font</code> from ancestor</h3>
-  <div class="Test-run" style="font:bold italic 20px/1 serif;">
+  <h3 class="Test-it">should inherit <code>font-size</code> from ancestor</h3>
+  <div class="Test-run" style="font-size: 20px;">
     <button>button</button><br>
     <input value="input"><br>
     <select style="border:1px solid #999;">
@@ -436,10 +432,6 @@
   <h3 class="Test-it">should be styleable</h3>
   <div class="Test-run">
     <input type="search" style="border:1px solid #ADD8E6; padding:10px; width:200px;">
-  </div>
-  <h3 class="Test-it">should not have a cancel button in Safari or Chrome</h3>
-  <div class="Test-run">
-    <input type="search" value="search">
   </div>
   <h3 class="Test-it">should reference inherited color</h3>
   <div class="Test-run">

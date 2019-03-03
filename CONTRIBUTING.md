@@ -119,12 +119,6 @@ project:
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 
-   Be sure to test the `normalize.css` file for style conformance.
-
-   ```bash
-   npm test
-   ```
-
    Be sure to add a test to the `test.html` file if appropriate, and test
    your change in all supported browsers.
 
@@ -196,7 +190,8 @@ cutting new releases.
 version numbers are incremented in a project. Versions are written as
 MAJOR.MINOR.PATCH.
 
-Changes limited to fallback declarations for browsers which do not support
-newer features produce a PATCH release.
-
-Changes limited to normalizations for older browsers produce a MINOR release.
+Any change to CSS rules whatsoever is considered backwards-breaking and will
+result in a new **major** release. No changes to CSS rules can add
+functionality in a backwards-compatible manner, therefore no changes are
+considered **minor**. Others changes with no impact on rendering are considered
+backwards-compatible and will result in a new **patch** release.

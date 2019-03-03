@@ -1,12 +1,38 @@
 # Changes to normalize.css
 
-### HEAD
+### 8.0.1 (November 4, 2018)
+
+* Fix regression in IE rendering of `main` element.
+
+### 8.0.0 (February 2, 2018)
+
+* Remove support for older browsers Android 4, lte IE 9, lte Safari 7.
+* Don't remove search input cancel button in Chrome/Safari.
+* Form inputs inherit `font-family`.
+* Fix text decoration in Safari 8+.
+
+### 7.0.0 (May 2, 2017)
+
+* Revert changes in `body` and form elements styles introduced by v6
+
+### 6.0.0 (March 26, 2017)
+
+* Remove all opinionated rules
+* Correct document heading comment
+* Update `abbr[title]` support
+
+### 5.0.0 (October 3, 2016)
 
 * Add normalized sections not already present from
   https://html.spec.whatwg.org/multipage/.
 * Move unsorted rules into their respective sections.
 * Update the `summary` style in all browsers.
 * Remove `::placeholder` styles due to a bug in Edge.
+* More explicitly define font resets on form controls.
+* Remove the `optgroup` normalization needed by the previous font reset.
+* Update text-size-adjust documentation  for IE on Windows Phone
+* Update OS X reference to macOS
+* Update the semver strategy.
 
 ### 4.2.0 (June 30, 2016)
 

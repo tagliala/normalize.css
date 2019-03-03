@@ -20,15 +20,9 @@
 npm install --save normalize.css
 ```
 
-**Bower**
-
-```sh
-bower install --save normalize-css
-```
-
 **CDN**
 
-See https://cdnjs.com/libraries/normalize
+See https://yarnpkg.com/en/package/normalize.css
 
 **Download**
 
@@ -46,17 +40,12 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 
 ## Browser support
 
-* Chrome (last two)
-* Edge (last two)
-* Firefox (last two)
-* Firefox ESR
-* Internet Explorer 8+
-* Opera (last two)
-* Safari 6+
-
-*[Normalize.css v1 provides legacy browser support]
-(https://github.com/necolas/normalize.css/tree/v1) (IE 6+, Safari 4+),
-but is no longer actively developed.*
+* Chrome
+* Edge
+* Firefox ESR+
+* Internet Explorer 10+
+* Safari 8+
+* Opera
 
 
 ## Extended details and known issues
@@ -73,13 +62,6 @@ intentional. [Source](https://en.wikipedia.org/wiki/User:Davidgothberg/Test59).
 
 Normally, using `sub` or `sup` affects the line-box height of text in all
 browsers. [Source](https://gist.github.com/413930).
-
-#### `svg:not(:root)`
-
-Adding `overflow: hidden` fixes IE9's SVG rendering. Earlier versions of IE
-don't support SVG, so we can safely use the `:not()` and `:root` selectors that
-modern browsers use in the default UA stylesheets to apply this style. [Source]
-(https://lists.w3.org/Archives/Public/public-svg-wg/2008JulSep/0339.html).
 
 #### `select`
 
@@ -105,24 +87,12 @@ Chrome and Safari on Windows you can't control `border` properly. It will apply
 `border-width` but will only show a border color (which cannot be controlled)
 for the outer 1px of that border. Applying `-webkit-appearance: textfield`
 addresses these issues without removing the benefits of search inputs (e.g.
-showing past searches). Safari (but not Chrome) will clip the cancel button on
-when it has padding (and `textfield` appearance).
-
-#### `::placeholder`
-
-In Edge, placeholders will disappear on `relative` or `absolute` positioned
-`<input>` elements if you use `opacity` less than `1` due to a [bug](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/3901363/).
+showing past searches).
 
 ## Contributing
 
 Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the
 contribution process easy and effective for everyone involved.
-
-
-## Acknowledgements
-
-Normalize.css is a project by [Nicolas Gallagher](https://github.com/necolas),
-co-created with [Jonathan Neal](https://github.com/jonathantneal).
 
 
 [changelog-image]: https://img.shields.io/badge/changelog-md-blue.svg?style=flat-square
